@@ -6,6 +6,17 @@ This project is a Svelte web application that uses the DiffusionDB API to provid
 
 ![DiffusionDB 2 Million Images](https://user-images.githubusercontent.com/15007159/198505835-bcc3a34f-a782-4064-989b-135e32b577a7.gif)
 
+# API
+
+The API for this project is located at [https://diffusiondb-api.fly.dev/](https://diffusiondb-api.fly.dev/).  The source is in the [anotherjesse/diffusiondb-api](https://github.com/anotherjesse/diffusiondb-api) repository.
+
+# Local Development
+
+To run the svelte app locally, you'll need to install the dependencies and run the dev server:
+
+    npm i
+    npm run dev
+
 # Ideas
 
 - show prompt, hyperparameters, and image in a modal?
