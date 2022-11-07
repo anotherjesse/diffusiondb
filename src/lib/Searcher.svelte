@@ -32,6 +32,21 @@
   $: debounce(query);
 </script>
 
+<a
+  href="https://github.com/anotherjesse/diffusiondb"
+  id="github-corner"
+  aria-label="View source on GitHub"
+  ><img
+    decoding="async"
+    loading="lazy"
+    width="149"
+    height="149"
+    src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149"
+    class="attachment-full size-full"
+    alt="Fork me on GitHub"
+    data-recalc-dims="1"
+  /></a
+>
 <div class="filter">
   <input
     type="text"
@@ -41,6 +56,7 @@
   />
 </div>
 <output>{results.length} results</output>
+
 {#if last_q < num_queries}
   <div id="foo"><Shadow size="200" color="#ffdd00" /></div>
 {/if}
@@ -115,5 +131,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  #github-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
   }
 </style>
