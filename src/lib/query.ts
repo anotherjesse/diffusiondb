@@ -1,7 +1,7 @@
 const l = window.location.hash.slice(1) || "50"; // hack to let users ask for more images
 
 export default async function search(q: string) {
-  let host = "https://diffusiondb-api.fly.dev/search";
+  let host = "https://ddb.m4ke.org/search";
   q = q.trim();
 
   if (q.length > 0) {
