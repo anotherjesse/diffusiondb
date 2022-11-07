@@ -11,31 +11,6 @@ This project is a Svelte web application that uses the DiffusionDB API to provid
 - show prompt, hyperparameters, and image in a modal?
 - explain sqlite fts5 search options
 
-# About the API
-
-The opensource [DiffusionDB-API](https://github.com/anotherjesse/diffusiondb-api) is exposes an API to filter the DiffusionDB dataset. The API is exposed at [https://diffusiondb-api.fly.dev](https://diffusiondb-api.fly.dev)
-
-## Methods
-
-### GET /?q={QUERY}&l={LIMIT}
-
-Returns a list of images that match the query. The query is a string that is matched against the prompt text. The limit is the number of images returned.
-
-The query uses SQLITE3 full-text search syntax. See [https://www.sqlite.org/fts5.html#full_text_query_syntax](https://www.sqlite.org/fts5.html#full_text_query_syntax) for more information.
-
-### GET /stats
-
-returns the total number of images in the dataset (and only works if the database is properly configured)
-
-## Data Fields
-
-- key: Unique image name
-- p: Prompt
-- se: Random seed
-- c: CFG Scale (guidance scale)
-- st: Steps
-- sa: Sampler
-
 # Images
 
 The images are hosted on [CloudFlare R2](https://blog.cloudflare.com/r2/) in a public bucket.
