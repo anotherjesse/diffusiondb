@@ -1,4 +1,4 @@
-# DiffusionDB: API & WebUI
+# DiffusionDB: WebUI
 
 This project is a Svelte web application that uses the DiffusionDB API to provide an interface for exploring [poloclub/diffusiondb](https://huggingface.co/datasets/poloclub/diffusiondb) dataset.
 
@@ -11,9 +11,9 @@ This project is a Svelte web application that uses the DiffusionDB API to provid
 - show prompt, hyperparameters, and image in a modal?
 - explain sqlite fts5 search options
 
-# API 
+# About the API
 
-The [DiffusionDB-API](https://github.com/anotherjesse/diffusiondb-api) is an opensource database API that provides a RESTful interface for querying the DiffusionDB dataset. The API is exposed at [https://diffusiondb-api.fly.dev](https://diffusiondb-api.fly.dev)
+The opensource [DiffusionDB-API](https://github.com/anotherjesse/diffusiondb-api) is exposes an API to filter the DiffusionDB dataset. The API is exposed at [https://diffusiondb-api.fly.dev](https://diffusiondb-api.fly.dev)
 
 ## Methods
 
